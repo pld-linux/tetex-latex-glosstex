@@ -8,6 +8,7 @@ Release:	0.1
 License:	GPL
 Group:		Applications/Publishing/TeX
 Source0:	ftp://ftp.ctan.org:/pub/tex/support/%{pname}.tar.gz
+# Source0-md5:	b6926a1b13eb73eff9df14d6f8340e1c
 Source1:	glosstex.md5
 BuildRequires:	tetex-format-latex
 Requires:	tetex-latex
