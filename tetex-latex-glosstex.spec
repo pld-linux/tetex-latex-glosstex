@@ -1,6 +1,4 @@
-
-%define pname glosstex
-
+%define		pname	glosstex
 Summary:	Prepare glossaries in LaTeX
 Summary(pl):	Przygotowywanie s³owników z obja¶nieniami w LaTeXu
 Name:		tetex-latex-glosstex
