@@ -17,7 +17,7 @@ Requires(post,postun):	/usr/bin/texhash
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define	glosstexdir %{_datadir}/texmf/tex/latex/glosstex
-%define	texhash	[ ! -x %{_bindir}/texhash ] || %{_bindir}/texhash 1>&2 ; 
+%define	texhash	[ ! -x %{_bindir}/texhash ] || %{_bindir}/texhash 1>&2 ;
 
 %description
 GlossTeX is a tool for the automatic preparation of glossaries, lists
@@ -51,10 +51,10 @@ install *.cfg *.sty *.std $RPM_BUILD_ROOT%{glosstexdir}/
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post 
+%post
 %texhash
 
-%postun 
+%postun
 %texhash
 
 %files
