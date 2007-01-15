@@ -3,7 +3,7 @@ Summary:	Prepare glossaries in LaTeX
 Summary(pl):	Przygotowywanie s³owników z obja¶nieniami w LaTeXu
 Name:		tetex-latex-glosstex
 Version:	0.4
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		Applications/Publishing/TeX
 Source0:	ftp://ftp.ctan.org:/pub/tex/support/%{pname}.tar.gz
@@ -11,10 +11,12 @@ Source0:	ftp://ftp.ctan.org:/pub/tex/support/%{pname}.tar.gz
 Source1:	glosstex.md5
 BuildRequires:	tetex-format-latex
 Requires:	tetex-latex
+Requires:	tetex-makeindex
 Requires(post,postun):	/usr/bin/texhash
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define	glosstexdir %{_datadir}/texmf/tex/latex/glosstex
+%define makeindexdir %{_datadir}/texmf/makeindex
 %define	texhash	[ ! -x %{_bindir}/texhash ] || %{_bindir}/texhash 1>&2 ;
 
 %description
@@ -41,10 +43,11 @@ cd -
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{glosstexdir}}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{glosstexdir},%{makeindexdir}}
 
 install glosstex $RPM_BUILD_ROOT%{_bindir}/
 install *.cfg *.sty *.std $RPM_BUILD_ROOT%{glosstexdir}/
+install glosstex.ist $RPM_BUILD_ROOT%{makeindexdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -60,3 +63,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README TODO TAGS glosstex.dvi
 %attr(755,root,root) %{_bindir}/*
 %{glosstexdir}
+%{makeindexdir}/glosstex.ist
