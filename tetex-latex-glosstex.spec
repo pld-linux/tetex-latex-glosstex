@@ -1,6 +1,6 @@
 %define		pname	glosstex
 Summary:	Prepare glossaries in LaTeX
-Summary(pl):	Przygotowywanie s≥ownikÛw z obja∂nieniami w LaTeXu
+Summary(pl.UTF-8):   Przygotowywanie s≈Çownik√≥w z obja≈õnieniami w LaTeXu
 Name:		tetex-latex-glosstex
 Version:	0.4
 Release:	1
@@ -25,12 +25,12 @@ of acronyms and sorted lists in general for use with LaTeX and
 MakeIndex. GlossTeX combines the functionality of acronym and nomencl
 and provides some new features.
 
-%description -l pl
-GlossTeX to narzÍdzie do automatycznego przygotowywania s≥ownikÛw z
-obja∂nieniami, wykazÛw skrÛtÛw i ogÛlnie posortowanych list do
-uøywania z LaTeXem i programem MakeIndex. GlossTeX ≥±czy
-funkcjonalno∂Ê pakietÛw acronym i nomencl, ma takøe trochÍ nowych
-moøliwo∂ci.
+%description -l pl.UTF-8
+GlossTeX to narzƒôdzie do automatycznego przygotowywania s≈Çownik√≥w z
+obja≈õnieniami, wykaz√≥w skr√≥t√≥w i og√≥lnie posortowanych list do
+u≈ºywania z LaTeXem i programem MakeIndex. GlossTeX ≈ÇƒÖczy
+funkcjonalno≈õƒá pakiet√≥w acronym i nomencl, ma tak≈ºe trochƒô nowych
+mo≈ºliwo≈õci.
 
 %prep
 cd %{_sourcedir}
