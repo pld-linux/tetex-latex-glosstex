@@ -1,6 +1,6 @@
 %define		pname	glosstex
 Summary:	Prepare glossaries in LaTeX
-Summary(pl.UTF-8):   Przygotowywanie słowników z objaśnieniami w LaTeXu
+Summary(pl.UTF-8):	Przygotowywanie słowników z objaśnieniami w LaTeXu
 Name:		tetex-latex-glosstex
 Version:	0.4
 Release:	1
